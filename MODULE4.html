@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Exercise</title>
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
+    <link rel="stylesheet" href="css/resets.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+
+    <script>
+        alert("Hello World! I am an alert box.");
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1><br><br></h1>
+        <figure>
+            <img src="IMAGE.jpg" width="300">
+            <figcaption></figcaption>
+        </figure>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-content">
+
+
+        <div class="page-content">
+
+            <p id="para1" class="card-body">Hello! Tell us about yourself</p>
+            <p id="para2" class="card-body">Tell us about your education</p>
+            <p id="para3" class="card-body">Tell us about your IT Skills</p>
+            <p id="para4" class="card-body">Share your IT projects</p>
+
+            <div class="card" id="about">
+                <p class="card-header">About</p>
+                <p class="card-body">I am a Bachelor of Science in Information Technology (BSIT) student who is
+                    passionate about web development and programming. I am eager to learn new technologies and improve
+                    my technical skills. I enjoy solving problems, debugging codes, and creating simple but functional
+                    websites. My goal is to become a skilled IT professional in the future.</p>
+            </div>
+
+            <div class="card" id="education">
+                <p class="card-header">Education</p>
+                <p class="card-body">I am currently pursuing a Bachelor of Science in Information Technology. Throughout
+                    my academic journey, I have gained knowledge in programming, web development, database management,
+                    and system analysis. My coursework and projects have helped me develop both technical and
+                    problem-solving skills.</p>
+            </div>
+
+            <div class="card" id="skills">
+                <p class="card-header">Skills</p>
+                <p class="card-body">HTML & CSS
+
+                    Basic JavaScript
+
+                    C++ Programming
+
+                    Basic Python
+
+                    Database Fundamentals
+
+                    Problem-Solving & Debugging
+
+                    Teamwork & Communication</p>
+            </div>
+
+            <div class="card" id="portfolio">
+                <p class="card-header">Portfolio</p>
+                <p class="card-body">This portfolio showcases some of the projects and activities I have completed as an
+                    IT student. It includes web design projects, coding exercises, and system development activities
+                    that demonstrate my growing skills in programming and web development.</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>© 2026 My Portfolio</p>
+        </footer>
+        <script>
+            const paragraph1 = document.getElementById("para1");
+            const paragraph2 = document.getElementById("para2");
+            const paragraph3 = document.getElementById("para3");
+            const paragraph4 = document.getElementById("para4");
+
+            console.log(paragraph1);
+            console.log(paragraph2);
+
+            paragraph1.textContent = "Hi! My name is Victor and I am a BSIT student.";
+            paragraph2.textContent = "I am currently studying Information Technology.";
+            paragraph3.textContent = "My skills include HTML, CSS, JavaScript, C++, and Python.";
+            paragraph4.textContent = "I have created web pages and coding projects.";
+        </script>
+
+</body>
+
+</html>
