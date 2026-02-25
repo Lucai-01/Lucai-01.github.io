@@ -103,7 +103,25 @@
             paragraph3.textContent = "My skills include HTML, CSS, JavaScript, C++, and Python.";
             paragraph4.textContent = "I have created web pages and coding projects.";
         </script>
+        <script>
+    fetch("students.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log("Full JSON:", data);
 
+            const studentList = document.getElementById("student-list");
+
+            data.students.forEach(student => {
+                console.log("Student:", student);
+
+                const li = document.createElement("li");
+                li.textContent = `${student.name} - Age: ${student.age} - Course: ${student.course}`;
+                studentList.appendChild(li);
+            });
+        })
+        .catch(error => console.error("Error loading JSON:", error));
+</script>
 </body>
 
 </html>
+
